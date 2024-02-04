@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <div class="card">
+            <div class="card-header">
+                <h3>{{productObject.pname}}</h3>
+            </div>
+            <div class="card-body">
+                <p>The product is {{productObject.pname}} and its status is {{productObject.pStatus}}</p>
+                <!-- <button class="btn btn-primary"
+                [routerLink]="['/products', productObject.pid, 'edit']">Edit Product</button> -->
+
+                <button class="btn btn-primary" (click)="goToEditProduct()">Edit Product</button>
+            </div>
+        </div>
+    </div>
+</div>
